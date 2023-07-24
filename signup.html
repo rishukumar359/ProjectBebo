@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myMod" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+						initial-scale=1.0"
+    />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script> -->
+  
+    
+    <script src="signC.js"></script>
+   
+   
+  </head>
+
+  <body  ng-controller="signC"> 
+   
+    
+    <!-- container div -->
+    <div class="container">
+      <!-- upper button section to select
+			the login or signup form -->
+     
+      <div class="slider"></div>
+      <!-- <div class="btn">
+        <button class="login">Login</button>
+       
+      </div> -->
+     
+      <!-- Form section that contains the
+			login and the signup form -->
+      <div class="form-section">
+        <!-- login form -->
+        <div class="login-box"> 
+          
+  
+          <input
+            type="number"
+            class="email ele"
+            ng-model="id"
+            placeholder="id"
+            autocomplete="off"
+          />
+          <input
+            type="email"
+            class="email ele"
+            ng-model="email"
+            placeholder="@email.com"
+            autocomplete="off"
+          />
+          <input
+            type="password"
+            class="password ele"
+            ng-model="password"
+            placeholder="password"
+            autocomplete="off"
+          />
+          <button
+            class="clkbtn"
+            ng-click="signin(id,email,password)"
+            value="submit"
+          >
+            Submit
+          </button> 
+          
+            <a href="#!" style="color:green ;">Sign in</a>
+          
+        </div>
+
+      </div>
+    </div>
+    
+  </body>
+</html>

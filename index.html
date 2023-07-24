@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-     <div>
-        <form action="/signupsend" method="post" >
-            NAME:<input  type="text" id="name"   name="name" ></input> 
-            AGE:<input  type="text" id="age"   name="age" ></input> 
-            Email:<input  type="text" id="email"   name="email" ></input>
-            Password:<input  type="text" id="Password"   name="Password" ></input> 
-            <button type="submit">submit</button>
-            </form>  
-    
-     </div>
+<html lang="en" ng-app="myMod">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AngularJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
 
-    
-
-</body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <script src= 
+  "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-route.js">
+      </script> 
+    <script src="app.js"></script> 
+    <script src="homeC.js"></script>
+    <script src="signC.js"></script>
+    <script src="detailsC.js"></script>
+    <script src="FormC.js"></script>
+  </head>
+  <body ng-controller="mainC"> 
+    <!-- <div>{{name}} </div> 
+    <a href="#!home" ng-click="click()">Click ME</a>
+    <a href="#!sign" ng-click="click()">sign</a> -->
+  <div ng-view></div>
+  </body>
 </html>
