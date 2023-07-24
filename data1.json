@@ -1,7 +1,109 @@
-{"user1":{"id":1,"name":"rishu","roll":196301084,"sub":"math"},
-    "user2":{"id":2,"name":"roshan","roll":196301085,"sub":"algo"},
-    "user3":{"id":3,"name":"kumar","roll":196301086,"sub":"zoology"},
-    "user4":{"id":4,"name":"yadav","roll":196301087,"sub":"chem"},
-    "user5":{"id":5,"name":"singh","roll":196301088,"sub":"bio"},
-    "user6":{"id":6,"name":"pradeep","roll":196301089,"sub":"phy"},
-    "user8":{"id":8,"name":"jaggu","roll":1963,"sub":"micro"}}   
+{
+  "users": [
+    {
+      "name": "roshan",
+      "age": 12,
+      "id": 6
+    },
+    {
+      "name": "rishu",
+      "age": 22,
+      "id": 7
+    },
+    {
+      "name": "nikki thakur",
+      "age": 22,
+      "id": 8
+    },
+    {
+      "name": "ishika",
+      "age": 22,
+      "id": 9
+    },
+    {
+      "id": 1,
+      "name": "pradeep",
+      "age": 22
+    },
+    {
+      "name": "shabbir",
+      "age": 22,
+      "id": 10
+    },
+    {
+      "name": "bip",
+      "age": 22,
+      "id": 11
+    }
+  ],
+  "sign": [
+    {
+      "name": "nikki",
+      "email": "nikki@gmail.com",
+      "password": "nikki@123",
+      "id": 1
+    },
+    {
+      "name": "nobita",
+      "email": "nobita@gmail.com",
+      "password": "nobita@123",
+      "id": 9
+    },
+    {
+      "name": "rishu",
+      "email": "rishu@gmail.com",
+      "password": "rishu@123",
+      "id": 2
+    },
+    {
+      "id": 5,
+      "name": "biplav",
+      "email": "bp@gmail.com",
+      "password": "biplav@123"
+    },
+    {
+      "id": 66,
+      "name": "kjhhjhjgvhv",
+      "email": "bp@gmail.com",
+      "password": "biplav@123"
+    }
+  ],
+  "Intern": [
+    {
+      "id": 1,
+      "batch": 2,
+      "firstname": "Rishu",
+      "lastname": "kumar",
+      "email": "rishukr1@gmail.com",
+      "date": "2023-05-29T18:30:00.000Z",
+      "role": "DEV"
+    },
+    {
+      "id": 2,
+      "batch": 2,
+      "firstname": "nikki",
+      "lastname": "thakur",
+      "email": "nikki@gmail.com",
+      "date": "2023-05-29T18:30:00.000Z",
+      "role": "DEV"
+    },
+    {
+      "id": "33",
+      "batch": 2,
+      "firstname": "biplav",
+      "lastname": "bhaukal",
+      "email": "bp@gmail.com",
+      "date": "2023-02-12T18:30:00.000Z",
+      "role": "QA"
+    },
+    {
+      "id": "45",
+      "batch": 2,
+      "firstname": "mansa",
+      "lastname": "dhingra",
+      "email": "mdhingra@gmail.com",
+      "date": "2023-02-12T18:30:00.000Z",
+      "role": "DEV"
+    }
+  ]
+}

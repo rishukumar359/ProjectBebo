@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myMod">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AngularJs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="Module.js"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="Rout.js"></script>  -->
+    <!-- <link rel="stylesheet" href="Bebo.css"> -->
+    
+  </head>
+  <body ng-controller="myController">  
+    {{value}}
+    <select ng-model="city"> 
+                                        
+      <option value="Patna">Patna</option>
+      <option value="chnd">chnd</option>
+      <option value="delhi">delhi</option> 
+
+    </select> 
+    <br>  
+    <button ng-click="count1fun()">{{count1}}</button> 
+    <br>
+   {{count}}
+    {{city}} 
+    <br> 
+    <input type="number" placeholder="Id"  ng-disabled="editid" ng-model="id" />
+    <input type="text" placeholder="NAME" ng-model="name" />
+    <input type="number" placeholder="Age" ng-model="age" /> 
+
+    {{name}}
+    
+    <br />
+    <button ng-click="postdata(id,name,age,editid)" value="submit">submit</button> 
+    <br>
+
+    
+
+    <!-- <div ng-init="col=['red','blue']">
+      {{col[0]}}
+      <br />
+      {{date |date:"short"}}
+      <br />
+      {{value | number:2}}
+
+      <br /> -->
+
+      <table border="1">
+        <tr>
+          <th ng-click="filterFunction('name')">NAME</th>
+          <th>AGE</th> 
+          <th>Actions</th>
+        </tr>
+        <tr ng-repeat="item in data | orderBy:order">
+          <td>{{item.name}}</td>
+          <td>{{item.age}}</td> 
+
+          <td> <button ng-click="deletedata(item.id)">Delete</button> 
+            <button ng-click="updatedata(item.id)">Edit</button>
+           </td>
+        </tr>
+      </table> 
+
+       <!-- <ul>
+        <li ng-repeat="item in name | orderBy:'-'">
+              {{item}}
+        </li>
+    </ul> -->
+    <!-- </div>  -->
+  </body>
+</html>
